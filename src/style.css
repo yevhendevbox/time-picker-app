@@ -1,0 +1,80 @@
+/* ============================= =================================
+                          Fonts import
+============================= ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&family=Ubuntu:wght@400;700&display=swap');
+
+/* ============================= =================================
+                          CSS VARIABLES
+============================= ================================= */
+
+:root {
+  --black: #313132;
+  --midnight-dream: #323436;
+  --onyx: #353434;
+  --black-jack: #3D3D3E;
+  --black-horizon: #44484d;
+  --snow-white: #f1f5f1;
+  --accent: #d4653e;
+
+  --gradient: linear-gradient(135deg, #69FF97 10%, #00E4FF 100%);
+
+  --ff-h: 'Sofia Sans Extra Condensed', sans-serif;
+  --ff-p: 'Roboto', sans-serif;
+
+  --fz-lg: 2rem;
+  --fz-md: 1.6rem;
+  --fz-sm: 1.4rem;
+
+  --bold: 700;
+  --regular: 400;
+}
+
+/* ============================= =================================
+                         Global Styles
+============================= ================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-p);
+  font-size: 10px;
+  background: var(--black-horizon);
+  color: var(--snow-white);
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-h);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+}
+.container {
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
